@@ -19,23 +19,25 @@ import com.example.memorygame.R
 import com.example.memorygame.ui.theme.MemoryGameTheme
 
 @Composable
-fun LaunchScreen(){
+fun LaunchScreen() {
 
-    Column (
+    Column(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier
             .fillMaxSize()
-    ){
-        Image(painterResource(
-            id = R.drawable.ic_launcher_foreground),
-            contentDescription = "Imagen principal" )
+    ) {
+        Image(
+            painterResource(
+                id = R.drawable.ic_launcher_foreground
+            ),
+            contentDescription = "Imagen principal"
+        )
 
-        Text(text = "Memory Game",
-            fontFamily = FontFamily.SansSerif,
+        Text(
+            text = "Memory Game",
             fontWeight = FontWeight.Bold,
             fontSize = 35.sp
-
         )
 
     }

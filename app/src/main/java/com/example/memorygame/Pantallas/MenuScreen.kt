@@ -30,7 +30,7 @@ import com.example.memorygame.viewModel.ViewModel
 fun MenuScreen(viewModel: ViewModel) {
 
     var expanded by remember { mutableStateOf(false) }
-    val dificultades = listOf("Fácil", "Intermedio", "Difícil")
+    val dificultades = listOf("Easy", "Mid", "Difficult")
     var opcionSeleccionada by remember {
         mutableStateOf(dificultades[0])
     }
